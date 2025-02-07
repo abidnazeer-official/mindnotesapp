@@ -8,6 +8,11 @@ import {
     StyleSheet,
 } from "react-native";
 
+
+import {AppRegistry} from 'react-native';  // This assumes you have an App.js file
+import {name as appName} from './app.json';
+
+AppRegistry.registerComponent(appName, () => App);
 const App = () => {
     const [task, setTask] = useState("");
     const [tasks, setTasks] = useState([]);
